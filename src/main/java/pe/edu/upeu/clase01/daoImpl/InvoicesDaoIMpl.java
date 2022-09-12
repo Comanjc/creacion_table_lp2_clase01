@@ -7,10 +7,10 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import pe.edu.upeu.clase01.dao.Todo;
+import pe.edu.upeu.clase01.dao.Operaciones;
 import pe.edu.upeu.clase01.entity.Invoices;
 @Component
-public class InvoicesDaoIMpl implements Todo<Invoices>{
+public class InvoicesDaoIMpl implements Operaciones<Invoices>{
     @Autowired
     private JdbcTemplate jdbcTemplate;
 	@Override

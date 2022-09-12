@@ -2,7 +2,7 @@ package pe.edu.upeu.clase01.dao;
 
 import java.util.List;
 
-public interface Todo<T> {
+public interface Operaciones<T> {
   int create (T t);
   int update (T t);
   int delete(int id);

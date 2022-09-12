@@ -6,20 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import pe.edu.upeu.clase01.dao.Operaciones;
-import pe.edu.upeu.clase01.daoImpl.InvoicesDaoIMpl;
-import pe.edu.upeu.clase01.entity.Invoices;
+import pe.edu.upeu.clase01.daoImpl.CustomersDaoIMpl;
+import pe.edu.upeu.clase01.entity.Customers;
+
 @Service
-public class InvoicesService implements Operaciones<Invoices>{
+public class CustomersService implements Operaciones<Customers> {
+	
 	@Autowired
-	private InvoicesDaoIMpl daoIMpl;
+	private CustomersDaoIMpl daoIMpl;
 	@Override
-	public int create(Invoices t) {
+	public int create(Customers t) {
 		// TODO Auto-generated method stub
 		return daoIMpl.create(t);
 	}
 
 	@Override
-	public int update(Invoices t) {
+	public int update(Customers t) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -31,15 +33,16 @@ public class InvoicesService implements Operaciones<Invoices>{
 	}
 
 	@Override
-	public Invoices read(int id) {
+	public Customers read(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Invoices> readAll() {
+	public List<Customers> readAll() {
 		// TODO Auto-generated method stub
 		return daoIMpl.readAll();
 	}
 
+  
 }

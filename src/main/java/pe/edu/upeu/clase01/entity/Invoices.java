@@ -23,6 +23,7 @@ public class Invoices implements Serializable{
 	private double tax;
 	private double shipping;
 	private double amount_due;
+	
 	public int getId() {
 		return id;
 	}
